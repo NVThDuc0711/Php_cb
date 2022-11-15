@@ -3,11 +3,14 @@
 //Tạo class tên calculator gồm 4 phép tính : cộng , trừ , nhân chia 
 class Calculator{
     //khai báo dữ liệu
-    public $numberA = 32;
-    public $numberB = 60; 
+    public $numberA  ;
+    public $numberB ; 
+    public $numberC ; 
     //khai báo hằng số 
     const _MESSAGE_VALUE = 'Value : {value}'; 
     // khai báo phương thức 
+
+   
     public function makeAdd($value1,$value2)
     {
         return $value1 + $value2 ;
@@ -35,4 +38,4 @@ class Calculator{
 $calc = new Calculator();
 
 $msg = $calc::_MESSAGE_VALUE;
-echo $calc->show($msg,$calc->makeAdd(2,6));
+//echo $calc->show($msg,$calc->makeAdd(2,6));
